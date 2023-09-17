@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import uOlogo from "../assets/uOttawa_HOR_BLACK_2021.svg";
 function Navbar() {
   return (
@@ -9,14 +10,17 @@ function Navbar() {
         </div>
         <div className="pr-[50px]">
           <ul className="flex ">
-            <li>Home</li>
+            <li><Link to="/">Home</Link>
+            </li>
             <li>About</li>
             <li>
               <a href="http://localhost:8501/" target="blank">
                 Yolo
               </a>
             </li>
-            <li>Datasets</li>
+            <li>
+            <Link to="/Datasets">Datasets</Link>
+            </li>
             <li>Know more</li>
           </ul>
         </div>
