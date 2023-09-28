@@ -1,5 +1,8 @@
 import React from "react";
 import uOlogo from "../assets/uOttawa_HOR_BLACK_2021.svg";
+import { Link } from "react-router-dom"; // Import Link
+
+
 function Navbar() {
   return (
     <div className="w-screen z-10 h-[80px] border-black bg-zinc-200 fixed drop-shadow-lg">
@@ -9,14 +12,14 @@ function Navbar() {
         </div>
         <div className="pr-[50px]">
           <ul className="flex ">
-            <li>Home</li>
-            <li>About</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li> {/* Use Link to navigate to the "About" page */}
             <li>
               <a href="http://localhost:8501/" target="blank">
                 Yolo
               </a>
             </li>
-            <li>Datasets</li>
+            <li><Link to="/datasets">Datasets</Link></li> {/* Include the Datasets link */}
             <li>Know more</li>
           </ul>
         </div>
