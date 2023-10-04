@@ -1,0 +1,28 @@
+Create a container div to center the component
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of viewport height */
+  }
+  
+  .rectangular-component {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px blue;
+  }
+  
+  .rectangular-component img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
