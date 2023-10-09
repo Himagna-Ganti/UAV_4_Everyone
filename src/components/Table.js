@@ -1,8 +1,7 @@
 import React from "react";
+import "./Table.css"; // Import the CSS file
 
-function Table({ data }) {
-  // Assuming data is an array of objects with properties for the table columns
-
+function Table({ data, onNameClick }) {
   return (
     <table>
       <thead>
@@ -17,7 +16,9 @@ function Table({ data }) {
         {data.map((item) => (
           <tr key={item.id}>
             <td>{item.id}</td>
-            <td>{item.name}</td>
+            <td onClick={() => onNameClick(item)} className="name-cell">
+              {item.name}
+            </td>
             <td>{item.age}</td>
             {/* Render other data columns as needed */}
           </tr>

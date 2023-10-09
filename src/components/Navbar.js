@@ -20,7 +20,7 @@ function Navbar() {
               </a>
             </li>
             <li><Link to="/datasets">Datasets</Link></li> {/* Include the Datasets link */}
-            <li>Know more</li>
+            <li><Link to= "/Knowmore">Know more</Link></li>
           </ul>
         </div>
         <div className="flex mr-[10px] mt-[5px] items-center h-[50px] align-middle">
