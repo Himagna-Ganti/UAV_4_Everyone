@@ -1,0 +1,46 @@
+/* Table.css */
+
+/* Style for the entire table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif; /* Specify a font family for the table */
+}
+
+/* Style for table headers and data cells */
+th, td {
+  border: 1px solid #816868;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff; /* Set the default background color for all rows */
+}
+
+/* Style for table headers */
+th {
+  background-color: #a778c3;
+  color: #fff;
+  font-weight: bold; /* Make header text bold */
+}
+
+/* Add hover effect to table rows (headers and data rows) */
+tr:hover {
+  background-color: #4f1818; /* Lighter background on hover */
+}
+
+/* Style links within table cells */
+td a {
+  color: #007bff; /* Link color */
+  text-decoration: underline; /* Underline links */
+}
+
+/* Add padding and margin to table caption */
+caption {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #c086e4;
+  color: #ffffff;
+  border-radius: 5px;
+}
