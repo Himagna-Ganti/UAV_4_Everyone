@@ -1,22 +1,26 @@
 import React from "react";
 import Navbar from "./Navbar";
-// import Infobox from './Infobox';
 import Multiplelinebreaks from "./Mulitplelinebreaks";
-import "./Modal.css"; 
+import "./Modal.css";
 import Driftbox from "./Driftbox";
-
+import Powerlinesbox from "./Powerlinesbox";
+import "./Datasets.css";
+import Backbutton from "./Backbutton";
 
 function Datasets() {
-
   return (
     <div>
-      <Navbar /> 
-      <Multiplelinebreaks count={4} />
-      <h1>Datasets</h1>
-      <Driftbox/>
+      <Navbar />
+      <Multiplelinebreaks count={3} />
+      <div className="header-container">
+        <Backbutton/>
+        <h1 className="custom-heading">Datasets</h1>
+      </div>
+      <Driftbox />
+      <Multiplelinebreaks count={1} />
+      <Powerlinesbox />
       <Multiplelinebreaks count={4} />
     </div>
-    
   );
 }
 

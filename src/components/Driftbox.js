@@ -7,7 +7,7 @@ const Driftbox = () => {
     <div className="drift-box">
       <div className="text-container">
         <div className="drift-text">Drift Datasets</div>
-        <Link to="/Tablerender" className="open-table-link">Click here to view Datasets</Link>
+        <Link to="/Tablerender" className="open-table-link">Click here to view Drifts Datasets</Link>
       </div>
     </div>
   );
