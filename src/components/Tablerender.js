@@ -20,8 +20,8 @@ import D32 from "./Defectiveinsulators/170032h.JPG";
 
 function Tablereder() {
   const data = [
-    { id: 1, Datasetname: "Normal Insulators", Numberofimages:"600", Dateofupload: "31/10/2023", description: "Link provided below will download datasets from our Amazon s3 bucket", datasetlink:"https://object-arbutus.cloud.computecanada.ca/rrg-test-bucket/Normal_insulators_images.zip", imagePath: [I49, I51, I56, I58, I59, I60]},
-    { id: 2, Datasetname: "Defective Insulators", Numberofimages:"532", Dateofupload: "31/10/2023",description: "Link provided below will download datasets from our Amazon s3 bucket", datasetlink:"https://object-arbutus.cloud.computecanada.ca/rrg-test-bucket/defect_images.zip", imagePath: [D07, D13, D29, D30, D31, D32]},
+    { id: 1, Datasetname: "Normal Insulators", Dateofupload: "31/10/2023", description: "Link provided below will download datasets from our Amazon s3 bucket", datasetlink:"https://object-arbutus.cloud.computecanada.ca/rrg-test-bucket/Normal_insulators_images.zip", imagePath: [I49, I51, I56, I58, I59, I60]},
+    { id: 2, Datasetname: "Defective Insulators", Dateofupload: "31/10/2023",description: "Link provided below will download datasets from our Amazon s3 bucket", datasetlink:"https://object-arbutus.cloud.computecanada.ca/rrg-test-bucket/defect_images.zip", imagePath: [D07, D13, D29, D30, D31, D32]},
     // Add more dataset objects as needed
   ];
 
