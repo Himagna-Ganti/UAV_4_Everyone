@@ -7,8 +7,9 @@ function Table({ data, onNameClick }) {
       <thead>
         <tr>
           <th>ID</th>
-          <th>Name</th>
-          <th>Age</th>
+          <th>Dataset Name</th>
+          <th>Number of Images</th>
+          <th>Date of Upload</th>
           {/* Add more table headers as needed */}
         </tr>
       </thead>
@@ -17,9 +18,10 @@ function Table({ data, onNameClick }) {
           <tr key={item.id}>
             <td>{item.id}</td>
             <td onClick={() => onNameClick(item)} className="name-cell">
-              {item.name}
+              {item.Datasetname}
             </td>
-            <td>{item.age}</td>
+            <td>{item.Numberofimages}</td>
+            <td>{item.Dateofupload}</td>
             {/* Render other data columns as needed */}
           </tr>
         ))}
