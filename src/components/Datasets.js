@@ -1,23 +1,25 @@
 import React from "react";
-import Table from "./Table"; // Import the Table component
 import Navbar from "./Navbar";
+import Multiplelinebreaks from "./Mulitplelinebreaks";
+import "./Modal.css";
+import Driftbox from "./Driftbox";
+import Powerlinesbox from "./Powerlinesbox";
+import "./Datasets.css";
+import Backbutton from "./Backbutton";
 
 function Datasets() {
-  const data = [
-    { id: 1, name: "Dataset 1", description: "Description 1" },
-    { id: 2, name: "Dataset 2", description: "Description 2" },
-    // Add more dataset objects as needed
-  ];
-
   return (
     <div>
-      <Navbar /> {/* Include the Navbar component */}
-        <br />
-        <br />
-        <br />
-        <br />
-      <h1>Datasets</h1>
-      <Table data={data} /> {/* Include the Table component with dataset data */}
+      <Navbar />
+      <Multiplelinebreaks count={3} />
+      <div className="header-container">
+        <Backbutton/>
+        <h1 className="custom-heading">Datasets</h1>
+      </div>
+      <Powerlinesbox />
+      <Multiplelinebreaks count={1} />
+      <Driftbox />
+      <Multiplelinebreaks count={4} />
     </div>
   );
 }
