@@ -5,6 +5,8 @@ import About from "./components/About";
 import Datasets from "./components/Datasets"; // Import the Datasets component
 import Knowmore from "./components/Knowmore";
 import Tableredner from "./components/Tablerender";
+import Modelandmetrics from "./components/Modelandmetrics";
+import Joinus from "./components/Joinus";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/Datasets" element={<Datasets />} /> {/* Route for the Datasets component */}
         <Route path= "/Knowmore" element={<Knowmore/>} /> {/* Route for the Know more component*/}
         <Route path="/Tablerender" element={<Tableredner/>} />
+        <Route path="/Modelandmetrics" element={<Modelandmetrics/>} />
+        <Route path="/Joinus" element={<Joinus/>} />
       </Routes>
     </Router>
   );

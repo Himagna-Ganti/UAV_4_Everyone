@@ -1,0 +1,22 @@
+/* About.css */
+
+.about-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .about-paragraph {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+  }

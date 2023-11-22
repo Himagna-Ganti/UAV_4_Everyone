@@ -21,6 +21,8 @@ function Navbar() {
             </li>
             <li><Link to="/datasets">Datasets</Link></li> {/* Include the Datasets link */}
             <li><Link to= "/Knowmore">Know more</Link></li>
+            <li><Link to= "/Modelandmetrics">Metrics</Link></li>
+            <li><Link to= "/Joinus">Join us</Link></li>
           </ul>
         </div>
         <div className="flex mr-[10px] mt-[5px] items-center h-[50px] align-middle">
