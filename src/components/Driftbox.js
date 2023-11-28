@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Driftbox = () => {
   return (
     <div className="drift-box">
-      <div className="text-container">
+      <div className="text-container-drift">
         <div className="drift-text">Drones Datasets</div>
         <Link to="/Tablerender" className="open-table-link">Click here to view Drones Datasets</Link>
       </div>
