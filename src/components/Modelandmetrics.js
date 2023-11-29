@@ -8,7 +8,9 @@ import SAM from "./SAM";
 // import t_04 from "./Images/t_0.4.png";
 import image from "./Images/image.png";
 import mask from "./Images/mask.png";
-import pmap from  "./Images/pmap.png"
+import pmap from  "./Images/pmap.png";
+import und from "./Images/yolonotdetected.jpeg";
+import det from "./Images/yolodetected.jpeg" 
 
 
 function Modelandmetrics() {
@@ -17,6 +19,10 @@ function Modelandmetrics() {
     image,
     mask,
     pmap,
+  ];
+  const images2 = [
+    und,
+    det,
   ];
 
   return (
@@ -27,8 +33,8 @@ function Modelandmetrics() {
         <h1 className="big-bold-text">Metrics</h1>
         <p></p>
         {/* Include the Yolov8metrics component with the images prop */}
-        <Yolov8metrics title="Metrics Title" content="Metrics Content goes here." images={images} />
-        <SAM title="Metrics Title" content="Metrics Content goes here." images={images} />
+        <Yolov8metrics title="Yolo V8 Model" content="Metrics related to Yolo V8 Model." images={images2} />
+        <SAM title="SAM Model" content="Metrics related to SAM Model." images={images} />
         {/* Add more content as needed */}
       </div>
       <Multiplelinebreaks count={4} />

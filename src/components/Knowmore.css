@@ -3,7 +3,7 @@
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
-    background-color: #c8e9e6;
+    background-color: #f5dfdf;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -21,7 +21,7 @@
     border-radius: 15px;
 }
 
-.text-container {
+.text-container-knowmore {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

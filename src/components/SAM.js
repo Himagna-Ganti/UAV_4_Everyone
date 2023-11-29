@@ -17,7 +17,7 @@ const SAM = ({ title, content, images }) => {
           </div>
         ))}
       </div>
-      <div className="text-container">
+      <div className="text-container-s">
         <h3 className="big-bold-text">F1 Score: 0.7565</h3>
         <h3 className="big-bold-text">MAP score: 0.6793</h3>
       </div>

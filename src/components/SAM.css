@@ -7,7 +7,7 @@
     box-shadow: 0 2px 4px rgba(255, 0, 0, 0.534);
     margin-top: 20px;
     /* Adjust the width and height as needed */
-    height: 1100px; /* Change to your desired height */
+    height: 1200px; /* Change to your desired height */
     /* Add more styles as needed */
   }
   
@@ -34,10 +34,10 @@
     border-radius: 7px;
   }
   
-  .text-container {
+  .text-container-s {
     margin-top: 20px;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 100px;
   }
   
   .big-bold-text {
@@ -45,6 +45,11 @@
     font-weight: bold;
   }
   
+  .small-bold-text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
   .table-container {
     margin-top: 20px;
     width: 70%; /* Adjust the width as needed */

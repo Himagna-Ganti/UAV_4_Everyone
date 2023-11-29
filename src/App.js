@@ -7,7 +7,8 @@ import Knowmore from "./components/Knowmore";
 import Tableredner from "./components/Tablerender";
 import Modelandmetrics from "./components/Modelandmetrics";
 import Joinus from "./components/Joinus";
-
+import Samdescription from "./components/Samdescription";
+import Yolov8descriptions from "./components/Yolov8description";
 function App() {
   return (
     <Router>
@@ -19,6 +20,8 @@ function App() {
         <Route path="/Tablerender" element={<Tableredner/>} />
         <Route path="/Modelandmetrics" element={<Modelandmetrics/>} />
         <Route path="/Joinus" element={<Joinus/>} />
+        <Route path="/Samdescription" element={<Samdescription/>} />
+        <Route path="/Yolov8descriptions" element={<Yolov8descriptions/>}/>
       </Routes>
     </Router>
   );

@@ -2,8 +2,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Yolov8metrics.css"; // Import your Yolov8metrics component styles
-import sss1 from "./Images/Screenshot 2023-11-20 at 8.37.16 p.m..png"
-import sss2 from "./Images/Screenshot 2023-11-20 at 8.37.16 p.m..png";
+import cm from "./Images/confusionmatrix.png"
+import f1 from "./Images/F1 confidence curve.jpeg";
 
 const Yolov8metrics = ({ title, content, images }) => {
   return (
@@ -17,37 +17,60 @@ const Yolov8metrics = ({ title, content, images }) => {
           </div>
         ))}
       </div>
-      <div className="text-container">
-        <h3 className="big-bold-text">F1 Score: 0.9863</h3>
-        <h3 className="big-bold-text">MAP score: 98.97</h3>
+      <div className="text-container-y">
+        <h3 className="big-bold-text">Train Box Loss: 1.283</h3>
+        <h3 className="big-bold-text">MAP score: 0.593</h3>
       </div>
       <div className="table-container">
         <table>
           <thead>
             <tr>
-              <th>Header 1</th>
-              <th>Header 2</th>
+              <th>Parameters</th>
+              <th>Values</th>
               {/* Add more headers as needed */}
             </tr>
           </thead>
           <tbody>
             {/* Repeat this row 10 times for the 10 rows */}
             <tr>
-              <td>Row 1, Cell 1</td>
-              <td>Row 1, Cell 2</td>
-              {/* Add more cells as needed */}
+              <td>Epochs</td>
+              <td>75</td>
             </tr>
             {/* Add more rows as needed */}
+            <tr>
+              <td>Batch Size</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>Image Size</td>
+              <td>640x640</td>
+            </tr>
+            <tr>
+              <td>Model</td>
+              <td>YoloeV8n-seg</td>
+            </tr>
+            <tr>
+              <td>GPU</td>
+              <td>Tesla T4</td>
+            </tr>
+            <tr>
+              <td>Train Time</td>
+              <td>145min 62sec</td>
+            </tr>
+            <tr>
+              <td>Inference Time</td>
+              <td>3.9ms</td>
+            </tr>
           </tbody>
         </table>
       </div>
       <div className="bottom-images-container">
         {/* Add two more images here */}
         <div className="bottom-image-item">
-          <img src= {sss1} alt="i 1" />
+          <img src= {cm} alt="i 1" />
         </div>
         <div className="bottom-image-item">
-          <img src={sss2} alt="I 2" />
+          <img src={f1} alt="I 2" />
         </div>
       </div>
     </div>

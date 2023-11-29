@@ -11,6 +11,8 @@ function Table({ data, onNameClick }) {
           {/* <th>Number of Images</th> */}
           <th>Date of Upload</th>
           {/* Add more table headers as needed */}
+          <th>sesonality of data</th>
+          <th>Domain</th>
         </tr>
       </thead>
       <tbody>
@@ -22,6 +24,8 @@ function Table({ data, onNameClick }) {
             </td>
             {/* <td>{item.Numberofimages}</td> */}
             <td>{item.Dateofupload}</td>
+            <td>{item.seasonality}</td>
+            <td>{item.domain}</td>
             {/* Render other data columns as needed */}
           </tr>
         ))}

@@ -7,7 +7,7 @@
     box-shadow: 0 2px 4px rgba(255, 0, 0, 0.534);
     margin-top: 20px;
     /* Adjust the width and height as needed */
-    height: 950px; /* Change to your desired height */
+    height: 1450px; /* Change to your desired height */
     /* Add more styles as needed */
   }
   
@@ -33,10 +33,10 @@
     border-radius: 8px;
   }
   
-  .text-container {
+  .text-container-y {
     margin-top: 20px;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 100px;
   }
   
   .big-bold-text {
@@ -82,8 +82,8 @@
   }
   
   .bottom-image-item img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 95%;
     object-fit: cover;
     border-radius: 8px;
   }

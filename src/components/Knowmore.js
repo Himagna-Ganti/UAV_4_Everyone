@@ -1,39 +1,43 @@
 import React from "react";
-import Navbar from "./Navbar"; // Import the Navbar component
+import Navbar from "./Navbar";
 import Multiplelinebreaks from "./Mulitplelinebreaks";
 import './Knowmore.css'
 
 function Knowmore() {
+  // Function to navigate to a new page with SAM Model text
+  const navigateToSAMText = () => {
+    // You can replace the '/' with the actual route where you want to display the SAM Model text
+    window.location.href = '/Samdescription';
+  };
+  const Yolov8Text = () => {
+    // You can replace the '/' with the actual route where you want to display the SAM Model text
+    window.location.href = '/Yolov8descriptions';
+  };
+  
+
   return (
     <div>
-      <Navbar /> {/* Include the Navbar component */}
+      <Navbar />
       <Multiplelinebreaks count={4} />
       <div className="knowmore-card">
-        <h1>Know More</h1>
+        <h1 className="big-bold-text">Know More</h1>
         <p>
-          If you want to know more about this project you are at the right place
-          here we are going to talk about how we utlized each model their advantages and drawbacks
-          {/* Add more content as needed */}
+          If you want to know more about this project, you are at the right place.
+          Here we are going to talk about how we utilized each model, their advantages, and drawbacks.
         </p>
       </div>
-      <div className="Model-yolov8">
-        <div className="text-container">
+      <div className="Model-yolov8" onClick={Yolov8Text}>
+        <div className="text-container-knowmore">
           <div className="Yolov8-text">Yolo V8 Detection</div>
-          <div className="Yolov8-description">this model was first desgned to detect object and other related tasks</div>
+          <div className="Yolov8-description">Know more about Yolo V8</div>
         </div>
       </div>
       <Multiplelinebreaks count={1} />
-      <div className="Model-yolov8-seg">
-        <div className="text-container">
-          <div className="Yolov8-text">Yolo V8 Segmentation</div>
-          <div className="Yolov8-description">this segmentation model is used to create bounding box</div>
-        </div>
-      </div>
-      <Multiplelinebreaks count={1} />
-      <div className="Model-SAM">
-        <div className="text-container">
+      {/* Clickable SAM Model component */}
+      <div className="Model-SAM" onClick={navigateToSAMText}>
+        <div className="text-container-knowmore">
           <div className="Yolov8-text">SAM Model</div>
-          <div className="Yolov8-description">Here we talk about the SAM model this is everyting to know about SAM</div>
+          <div className="Yolov8-description">Know more about SAM</div>
         </div>
       </div>
       <Multiplelinebreaks count={4} />
