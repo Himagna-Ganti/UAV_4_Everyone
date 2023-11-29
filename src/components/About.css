@@ -1,0 +1,27 @@
+/* About.css */
+
+.profile-container {
+  width: 48%; /* Set the width to less than 50% to leave some space between cards */
+  margin: 1%; /* Add margin for spacing between cards */
+  display: inline-block; /* Display cards inline */
+  vertical-align: top; /* Align cards to the top */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+  
+  .about-heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .about-paragraph {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+  }
