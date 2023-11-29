@@ -3,10 +3,10 @@ import Typed from "react-typed";
 import "./Title.css";
 function Title() {
   return (
-    <div className="text-charcoal container ">
+    <div className="text-charcoal  h-[500px] container flex flex-col items-center  ">
       <div className="pt-[100px] text-7xl   font-work font-bold ">
         <Typed
-          className="ml-[430px] "
+          className="ml-[230px] "
           strings={["UAV 4 EVERYONE"]}
           typeSpeed={60}
           backSpeed={80}
